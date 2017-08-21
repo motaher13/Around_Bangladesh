@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>first page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
+  </head>
+  <body>
+
+<!--Navigation-->
+<div id="myNavbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav"></button>
+            <a href="#" class="navbar-brand">JOURNEY!!</a>
+        </div>
+        <div class="navbar-collapse collapse" id="mynav">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#route">ROUTE</a></li>
+                <li><a href="#residence">RESIDENCE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                
+            </ul>
+            
+        </div>
+        
+    </div>
+    
+</div>
+ 
+<!--header-->
+<div id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h1>AROUND BANGLADESH</h1>
+                <p>want to visit places of bangladesh?? here is the best resources for you to create a tour and travel arround your homeland</p>
+                <!--<button class="btn btn-lg btn-primary"><a href="new.html"> VISIT PLACES</a></button>-->
+                <a class="btn btn-lg btn-primary" href="second.php?divn=abcd&dist=abcd&place=abcd">VISIT PLACES</a>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides" src="images/1.jpg" style="width:100%">
+                <img class="mySlides" src="images/2.jpg" style="width:100%">
+                <img class="mySlides" src="images/3.jpg" style="width:100%">
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+
+<!--path-->
+<div id="route" class="route">
+    <div class="container">
+        <h2>Want To go somewhere??</h2>
+        <p>cox'sbazar,rangamati,moynamoti,bandorban,lalakhal,jaflong and many other tourist spots are waiting for you!! find your path and start your journey</p>
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+            <div class="w3-card-4" style="width:100% ">
+            <img src="images/1.jpg" alt="Norway" style="width:100%">
+            <div class="w3-container w3-center">
+            <p>The Troll's tongue in Hardanger, Norway</p>
+            </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+            <div class="w3-card-4" style="width:100% ">
+            <img src="images/2.jpg" alt="Norway" style="width:100%">
+            <div class="w3-container w3-center">
+            <p>The Troll's tongue in Hardanger, Norway</p>
+            </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+            <div class="w3-card-4" style="width:100% ">
+            <img src="images/3.jpg" alt="Norway" style="width:100%">
+            <div class="w3-container w3-center">
+            <p>The Troll's tongue in Hardanger, Norway</p>
+            </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+            <div class="w3-card-4" style="width:100% ">
+            <img src="images/1.jpg" alt="Norway" style="width:100%">
+            <div class="w3-container w3-center">
+            <p>The Troll's tongue in Hardanger, Norway</p>
+            </div>
+            </div>
+            </div>
+        </div>
+        <button class="btn btn-lg btn-success"> GENERATE PATH</button>
+    
+    </div>
+</div>
+
+     
+
+
+
+
+
+
+
+  
+
+
+ 
+ 
+ 
+  
+  
+  
+  
+  
+    <script>                                                            
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

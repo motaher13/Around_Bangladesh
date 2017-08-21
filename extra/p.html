@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>  
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style >
+         #final{
+      text-decoration: none;
+      font-size: 20px;
+      height: 40px;
+      width: 150px;
+      padding-top: 5px;
+      text-align: center;
+      border: 2px solid #262673;
+      color: #292525;
+      margin: 30px 20px;
+      display: block;
+      border-radius: 5%;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+  <form action="q.php?dist=<?php echo $_GET['divn'] ?>&place=<?php echo $_GET['place'] ?>&go=yes" method="post">
+    <h2>Select train service</h2>
+    <div class="checkbox"><label><input type="checkbox" name="train" value="marked">Train service</label></div>
+    <h2>Select bus service</h2>
+    <div class="checkbox"><label><input type="checkbox" name="hanif" value="marked">hanif poribohon</label></div>
+    <div class="checkbox"><label><input type="checkbox" name="shahi" value="marked">shahi poribohon</label></div>
+    <h2>choose your priority</h2>
+    <div class="radio"><label><input type="radio" name="optradio" value="time">time</label></div>
+    <div class="radio"><label><input type="radio" name="optradio" value="cost">cost</label></div>
+     <button id="final" type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
